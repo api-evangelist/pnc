@@ -7,7 +7,7 @@ description: >-
   tools, and machine-readable API artifacts for PNC. PNC currently does not publish
   a public developer API portal; this entry tracks the organization for future API
   discovery.
-type: Contract
+kind: contract
 position: Consumer
 access: 3rd-Party
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
