@@ -23,6 +23,8 @@ url: https://raw.githubusercontent.com/api-evangelist/pnc/refs/heads/main/apis.y
 specificationVersion: '0.19'
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/pnc-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/pnctech
   - type: LinkedIn
