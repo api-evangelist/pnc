@@ -1,36 +1,201 @@
 aid: pnc
 name: PNC
 description: >-
-  PNC is a Fortune 500 financial services company offering retail and corporate
-  banking, asset management, residential mortgage banking, and other financial
-  services across the United States. This repository captures the APIs, developer
-  tools, and machine-readable API artifacts for PNC. PNC currently does not publish
-  a public developer API portal; this entry tracks the organization for future API
-  discovery.
-kind: contract
-position: Consumer
-access: 3rd-Party
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  PNC Financial Services Group is a Pittsburgh-based money-center bank and Fortune
+  500 diversified financial services company offering retail banking, corporate and
+  institutional banking, treasury management, asset management, and residential
+  mortgage banking across the United States. PNC operates a real first-party developer
+  portal at developer.pnc.com ("PNC Developer Tools: Open APIs for Banking & Payments")
+  that publishes a catalog of treasury and payments API products — including Account
+  Verification Services, ePayments, Real-Time Payments (RTP), Direct-to-Debit-Card
+  (push-to-card) disbursement, and information reporting — surfaced through its PINACLE
+  commercial banking platform and PINACLE Connect embedded-banking integrations. Full
+  API reference documentation, sandbox/testing environments, and call codes are gated
+  behind credentialed onboarding arranged through a PNC Relationship Manager or Treasury
+  Management Officer; no OpenAPI/Swagger specifications are publicly downloadable. On the
+  consumer open-finance side, PNC exposes account data through an Akoya-provided tokenized
+  data-access API and signed a bilateral data-access agreement with Plaid in September 2024,
+  positioning PNC ahead of CFPB Section 1033 personal-financial-data-rights requirements.
+kind: company
+accessModel:
+  pricing: unknown
+  onboarding: partner
+  trial: false
+  try_now: false
+  public: false
+  label: Partner onboarding via Relationship Manager / Treasury Management Officer
+  confidence: medium
+  source:
+    - developer-portal
+    - documentation
+  generated: '2026-07-23'
+  method: derived
+position: Producer
+access: Partner
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pnc.png
 tags:
   - Banking
   - Financial Services
-  - Fortune 500
-  - Retail Banking
+  - United States
+  - Treasury Management
+  - Payments
+  - Real-Time Payments
   - Corporate Banking
+  - Open Finance
+  - Fortune 500
 created: '2026-03-21'
-modified: '2026-04-28'
+modified: '2026-07-23'
 url: https://raw.githubusercontent.com/api-evangelist/pnc/refs/heads/main/apis.yml
 specificationVersion: '0.19'
-apis: []
+apis:
+  - aid: pnc:account-verification-services
+    name: PNC Account Verification Services API
+    description: >-
+      Account Verification Services API from PNC's developer portal for confirming
+      the ownership and status of bank accounts before disbursing or collecting funds,
+      helping corporate and institutional clients prevent payment fraud and reduce
+      returns. Documented on developer.pnc.com with a business product sheet and
+      developer guide; production access, sandbox, and call codes require credentialed
+      onboarding through a PNC Relationship Manager or Treasury Management Officer.
+    humanURL: https://developer.pnc.com/documentation/products/Account-Verification-Services/overview
+    tags:
+      - Account Verification
+      - Fraud Prevention
+      - United States
+      - Payments
+    properties:
+      - type: Documentation
+        url: https://developer.pnc.com/documentation/products/Account-Verification-Services/overview
+      - type: SignupURL
+        url: https://developer.pnc.com/
+  - aid: pnc:epayments
+    name: PNC ePayments API
+    description: >-
+      ePayments API from PNC's developer portal for programmatically initiating and
+      tracking electronic payments — including ACH, wire transfers, and Real-Time
+      Payments (RTP) — from client and ERP systems into PNC treasury services. Part of
+      PNC's PINACLE Connect embedded-banking capability. Documented on developer.pnc.com;
+      full reference, sandbox, and credentials are provisioned through a PNC Relationship
+      Manager or Treasury Management Officer.
+    humanURL: https://developer.pnc.com/documentation/products/ePayments/overview
+    tags:
+      - Payments
+      - ACH
+      - Wire Transfer
+      - United States
+      - Treasury Management
+    properties:
+      - type: Documentation
+        url: https://developer.pnc.com/documentation/products/ePayments/overview
+      - type: SignupURL
+        url: https://developer.pnc.com/
+  - aid: pnc:real-time-payments
+    name: PNC Real-Time Payments (RTP) API
+    description: >-
+      Real-Time Payments API surface from PNC, one of the first U.S. banks to adopt The
+      Clearing House RTP network. PNC has built RTP-related APIs that let clients embed
+      instant, 24/7/365 credit-push payments and request-for-payment flows into their own
+      systems. Documented within the PNC developer portal's treasury/payments catalog;
+      production access and sandbox are gated behind Relationship Manager / Treasury
+      Management Officer onboarding, and no public OpenAPI specification is downloadable.
+    humanURL: https://developer.pnc.com/
+    tags:
+      - Real-Time Payments
+      - Payments
+      - United States
+      - Instant Payments
+      - Treasury Management
+    properties:
+      - type: Documentation
+        url: https://developer.pnc.com/
+      - type: SignupURL
+        url: https://developer.pnc.com/
+  - aid: pnc:direct-to-debit-card
+    name: PNC Direct-to-Debit-Card (Push-to-Card) API
+    description: >-
+      Direct-to-Debit-Card (DTD) API from PNC providing an efficient option for
+      business-to-consumer (B2C) fund disbursement by pushing payments directly to a
+      recipient's debit card. Documented as part of PNC's treasury/payments API catalog
+      on developer.pnc.com; access, sandbox, and credentials are arranged through a PNC
+      Relationship Manager or Treasury Management Officer. No public OpenAPI specification
+      is available for download.
+    humanURL: https://developer.pnc.com/
+    tags:
+      - Push to Card
+      - Disbursements
+      - Payments
+      - United States
+      - B2C
+    properties:
+      - type: Documentation
+        url: https://developer.pnc.com/
+      - type: SignupURL
+        url: https://developer.pnc.com/
+  - aid: pnc:information-reporting
+    name: PNC Information Reporting API
+    description: >-
+      Information reporting API surface from PNC for programmatic, near-real-time access
+      to account balances, transaction history, and account detail across a client's PNC
+      treasury accounts, supporting cash positioning and reconciliation. Documented within
+      the PNC developer portal alongside the payments products; full reference, sandbox, and
+      call codes require credentialed onboarding through a PNC Relationship Manager or
+      Treasury Management Officer. No public OpenAPI specification is downloadable.
+    humanURL: https://developer.pnc.com/
+    tags:
+      - Information Reporting
+      - Balances
+      - Transactions
+      - United States
+      - Treasury Management
+    properties:
+      - type: Documentation
+        url: https://developer.pnc.com/
+      - type: SignupURL
+        url: https://developer.pnc.com/
+  - aid: pnc:consumer-data-access-akoya
+    name: PNC Consumer Data Access API (Akoya)
+    description: >-
+      Consumer open-finance data-access surface through which PNC lets its retail customers
+      securely permission and share account data with third-party financial apps without
+      handing over login credentials. PNC delivers this through an Akoya-provided tokenized
+      data-access API and, since a September 2024 bilateral data-access agreement, connects
+      Plaid to that same Akoya API. This aggregator-mediated posture is PNC's stated path
+      toward CFPB Section 1033 personal-financial-data-rights compliance. Access is via the
+      Akoya data-access network and PNC's aggregator agreements rather than a self-serve
+      public portal.
+    humanURL: https://pnc.mediaroom.com/2024-09-20-PNC-Financial-Services-Group,-Plaid-Enter-Data-Access-Agreement
+    tags:
+      - Open Finance
+      - Data Access
+      - CFPB 1033
+      - Akoya
+      - United States
+    properties:
+      - type: Documentation
+        url: https://pnc.mediaroom.com/2024-09-20-PNC-Financial-Services-Group,-Plaid-Enter-Data-Access-Agreement
+      - type: DataAggregator
+        url: https://www.akoya.com/
 common:
+  - type: Website
+    url: https://www.pnc.com
+  - type: DeveloperPortal
+    url: https://developer.pnc.com/
+  - type: Documentation
+    url: https://developer.pnc.com/documentation
+  - type: SignupURL
+    url: https://developer.pnc.com/login
+  - type: Blog
+    url: https://www.pnc.com/insights/corporate-institutional.html
   - type: DomainSecurity
     url: security/pnc-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/pnctech
   - type: LinkedIn
     url: https://www.linkedin.com/company/pnc-bank
-  - type: Website
-    url: https://www.pnc.com
+  - type: PrivacyPolicy
+    url: https://www.pnc.com/en/customer-service/privacy-policy/privacy-policy-and-notices.html
+  - type: TermsOfService
+    url: https://www.pnc.com/en/customer-service/terms-conditions.html
 maintainers:
   - FN: API Evangelist
     email: info@apievangelist.com

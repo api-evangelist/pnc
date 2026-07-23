@@ -1,0 +1,55 @@
+reviewer: API Evangelist
+date: '2026-07-23'
+provider: PNC
+slug: pnc
+tier: money-center
+summary: >-
+  PNC operates a genuine first-party developer portal at developer.pnc.com ("PNC
+  Developer Tools: Open APIs for Banking & Payments") that publishes a catalog of
+  treasury and payments API products for corporate and institutional clients. The
+  portal itself is public, but full API reference documentation, sandbox/testing
+  environments, and call codes sit behind credentialed onboarding arranged through a
+  PNC Relationship Manager (RM) or Treasury Management Officer (TMO). No OpenAPI,
+  Swagger, or Postman specification is publicly downloadable, so this repo represents
+  the documented API family as humanURL-only entries with an honest partner-gated note.
+developer_portal: https://developer.pnc.com/
+documented_apis:
+  - Account Verification Services (confirmed product doc slug)
+  - ePayments — ACH, wire, RTP initiation (confirmed product doc slug)
+  - Real-Time Payments (RTP) — PNC early TCH RTP adopter
+  - Direct-to-Debit-Card / push-to-card B2C disbursement
+  - Information reporting — balances, transactions, account detail
+  - Consumer data access via Akoya tokenized API + Plaid agreement
+downloadable_specs: none
+specs_harvested: 0
+auth_model: >-
+  Corporate/treasury APIs are provisioned per-client through RM/TMO onboarding with
+  credentials issued via the gated developer portal; PNC's product materials reference
+  sandbox environments and "call codes." Specific auth mechanism (OAuth2 client-credentials
+  vs mTLS) is not publicly documented outside the gated portal, so it is not asserted here.
+  Consumer data access is token-based (no credential sharing) via the Akoya data-access
+  network.
+open_finance_posture:
+  fdx: >-
+    PNC delivers consumer data sharing through Akoya (an FDX-aligned data-access network);
+    PNC has not published a standalone public FDX participation statement in the sources
+    reviewed.
+  cfpb_1033: >-
+    PNC frames its bilateral aggregator agreements and Akoya API as getting ahead of CFPB
+    Section 1033 personal-financial-data-rights requirements.
+  aggregators:
+    - Akoya (PNC's stated API service provider for consumer data recipients)
+    - Plaid (bilateral data-access agreement, September 20, 2024)
+    - Flinks (per openbankingtracker aggregator coverage)
+    - BankSync (per openbankingtracker aggregator coverage)
+spec_provenance: >-
+  No machine-readable API definitions were harvested. Product names, the developer-portal
+  URL, and two confirmed documentation slugs (Account-Verification-Services, ePayments)
+  were verified via search-indexed developer.pnc.com pages and PNC's own corporate-insights
+  material; the Akoya/Plaid data-access posture was verified via PNC's September 2024
+  investor/newsroom announcement. developer.pnc.com is bot-protected (requests time out
+  from automated clients), so pages could not be crawled directly.
+notes: >-
+  Honest deepening from a zero-API stub to six documented, partner-gated API products plus
+  a consumer data-access entry. This is a real but gated corporate-banking API surface —
+  typical of U.S. money-center banks — not a self-serve public developer program.
