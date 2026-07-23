@@ -188,6 +188,16 @@ common:
     url: https://www.pnc.com/insights/corporate-institutional.html
   - type: DomainSecurity
     url: security/pnc-domain-security.yml
+  - type: SecurityTxt
+    url: well-known/pnc-security.txt
+  - type: WellKnown
+    url: well-known/pnc-well-known.yml
+  - type: VulnerabilityDisclosure
+    url: security/pnc-vulnerability-disclosure.yml
+  - type: Security
+    url: https://www.pnc.com/en/security-privacy/responsible-disclosure-program.html
+  - type: Support
+    url: https://www.pnc.com/insights/corporate-institutional/gain-market-insight/application-program-interface-api-faqs.html
   - type: GitHubOrganization
     url: https://github.com/pnctech
   - type: LinkedIn

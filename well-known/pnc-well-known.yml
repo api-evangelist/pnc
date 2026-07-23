@@ -1,0 +1,33 @@
+generated: '2026-07-23'
+method: searched
+source: https://www.pnc.com/.well-known/security.txt
+notes: >-
+  developer.pnc.com is a client-rendered single-page app that returns its HTML
+  shell (HTTP 200) for every /.well-known/ path, so those are not real discovery
+  documents and are recorded as not-present. The only genuine well-known document
+  is the RFC 9116 security.txt served as plain text on the corporate host
+  www.pnc.com.
+hosts:
+  - host: https://www.pnc.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        file: pnc-security.txt
+        format: rfc9116
+  - host: https://developer.pnc.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        note: SPA HTML shell, not a security.txt document
+      - path: /.well-known/openid-configuration
+        status: 200
+        note: SPA HTML shell, not OIDC discovery
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        note: SPA HTML shell, not RFC 8414 metadata
+      - path: /.well-known/api-catalog
+        status: 200
+        note: SPA HTML shell, not an RFC 9727 api-catalog
+      - path: /openapi.json
+        status: 000
+        note: no public OpenAPI; specs are gated behind credentialed onboarding
