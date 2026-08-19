@@ -57,7 +57,7 @@ tags:
 created: '2026-03-21'
 modified: '2026-07-23'
 url: https://raw.githubusercontent.com/api-evangelist/pnc/refs/heads/main/apis.yml
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
   - aid: pnc:account-verification-services
     name: PNC Account Verification Services API
