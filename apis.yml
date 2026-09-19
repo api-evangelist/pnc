@@ -102,6 +102,12 @@ apis:
     tags:
       - Payments
       - ACH
+      - Wire Transfers
+      - United States
+      - Treasury Management
+    tags_raw:
+      - Payments
+      - ACH
       - Wire Transfer
       - United States
       - Treasury Management
