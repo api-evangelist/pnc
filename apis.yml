@@ -46,7 +46,7 @@ access: Partner
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pnc.png
 tags:
   - Banking
-  - Financial-Services
+  - Financial Services
   - United States
   - Treasury Management
   - Payments
@@ -64,6 +64,7 @@ tags_raw:
   - Corporate Banking
   - Open Finance
   - Fortune 500
+  - Financial-Services
 created: '2026-03-21'
 modified: '2026-07-23'
 url: https://raw.githubusercontent.com/api-evangelist/pnc/refs/heads/main/apis.yml
@@ -148,6 +149,12 @@ apis:
       is available for download.
     humanURL: https://developer.pnc.com/
     tags:
+      - Push to Card
+      - Disbursements
+      - Payments
+      - United States
+      - Consumer
+    tags_raw:
       - Push to Card
       - Disbursements
       - Payments
