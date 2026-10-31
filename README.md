@@ -1,3 +1,5 @@
+# PNC
+
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
 >
@@ -62,52 +64,96 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-## PNC (pnc)
+PNC Financial Services Group is a Pittsburgh-based money-center bank and Fortune 500 diversified financial services company offering retail banking, corporate and institutional banking, treasury management, asset management, and residential mortgage banking across the United States. PNC operates a real first-party developer portal at developer.pnc.com ("PNC Developer Tools: Open APIs for Banking & Payments") that publishes a catalog of treasury and payments API products — including Account Verification Services, ePayments, Real-Time Payments (RTP), Direct-to-Debit-Card (push-to-card) disbursement, and information reporting — surfaced through its PINACLE commercial banking platform and PINACLE Connect embedded-banking integrations. Full API reference documentation, sandbox/testing environments, and call codes are gated behind credentialed onboarding arranged through a PNC Relationship Manager or Treasury Management Officer; no OpenAPI/Swagger specifications are publicly downloadable. On the consumer open-finance side, PNC exposes account data through an Akoya-provided tokenized data-access API and signed a bilateral data-access agreement with Plaid in September 2024, positioning PNC ahead of CFPB Section 1033 personal-financial-data-rights requirements.
 
-PNC Financial Services Group is a Pittsburgh-based money-center bank and Fortune 500 diversified financial services company offering retail banking, corporate and institutional banking, treasury management, asset management, and residential mortgage banking across the United States. PNC operates a real first-party developer portal at [developer.pnc.com](https://developer.pnc.com/) ("PNC Developer Tools: Open APIs for Banking & Payments") publishing a catalog of treasury and payments API products, surfaced through its PINACLE commercial banking platform and PINACLE Connect embedded-banking integrations.
+**Areas:** Banking · Financial Services · United States · Treasury Management · Payments · Real-Time Payments · Corporate Banking · Open Finance · Fortune 500
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/pnc/refs/heads/main/apis.yml)
+## PNC on APIs.io
 
-## Scope
+Everything profiled for PNC is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/pnc/](https://apis.io/providers/pnc/)** — or go straight to one of the APIs or properties below.
 
-- **Type:** Company
-- **Position:** Producer
-- **Access:** Partner (Relationship Manager / Treasury Management Officer onboarding)
+### APIs (6)
 
-## Tags
+- [PNC Account Verification Services API](https://apis.io/apis/pnc/account-verification-services/) — Account Verification Services API from PNC's developer portal for confirming the ownership and status of bank accounts before disbursing or collecting…
+- [PNC ePayments API](https://apis.io/apis/pnc/epayments/) — ePayments API from PNC's developer portal for programmatically initiating and tracking electronic payments — including ACH, wire transfers, and Real-Time…
+- [PNC Real-Time Payments (RTP) API](https://apis.io/apis/pnc/real-time-payments/) — Real-Time Payments API surface from PNC, one of the first U.S. banks to adopt The Clearing House RTP network. PNC has built RTP-related APIs that let…
+- [PNC Direct-to-Debit-Card (Push-to-Card) API](https://apis.io/apis/pnc/direct-to-debit-card/) — Direct-to-Debit-Card (DTD) API from PNC providing an efficient option for business-to-consumer (B2C) fund disbursement by pushing payments directly to a…
+- [PNC Information Reporting API](https://apis.io/apis/pnc/information-reporting/) — Information reporting API surface from PNC for programmatic, near-real-time access to account balances, transaction history, and account detail across a…
+- [PNC Consumer Data Access API (Akoya)](https://apis.io/apis/pnc/consumer-data-access-akoya/) — Consumer open-finance data-access surface through which PNC lets its retail customers securely permission and share account data with third-party financial…
 
-- Banking
-- Financial Services
-- United States
-- Treasury Management
-- Payments
-- Real-Time Payments
-- Corporate Banking
-- Open Finance
-- Fortune 500
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Documented API products on the PNC developer portal (full reference, sandbox, and call codes are gated behind credentialed onboarding; no OpenAPI specs are publicly downloadable):
+#### Security (2)
 
-- **PNC Account Verification Services API** — confirm bank-account ownership/status to prevent payment fraud
-- **PNC ePayments API** — initiate ACH, wire, and RTP payments from client/ERP systems
-- **PNC Real-Time Payments (RTP) API** — instant 24/7 credit-push payments and request-for-payment
-- **PNC Direct-to-Debit-Card (Push-to-Card) API** — B2C fund disbursement to debit cards
-- **PNC Information Reporting API** — near-real-time balances, transactions, and account detail
-- **PNC Consumer Data Access API (Akoya)** — token-based retail data sharing via Akoya + Plaid (Sept 2024 agreement)
+Authentication, trust centre, and vulnerability disclosure.
 
-## Common Properties
+- [Pnc Domain Security](https://apis.io/security/pnc/pnc-domain-security/)
+- [Pnc Vulnerability Disclosure](https://apis.io/security/pnc/pnc-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.pnc.com)
-- [Developer Portal](https://developer.pnc.com/)
 - [Documentation](https://developer.pnc.com/documentation)
-- [Blog / Insights](https://www.pnc.com/insights/corporate-institutional.html)
-- [GitHub Organization](https://github.com/pnctech)
-- [LinkedIn](https://www.linkedin.com/company/pnc-bank)
+- [Support](https://www.pnc.com/insights/corporate-institutional/gain-market-insight/application-program-interface-api-faqs.html)
+- [Blog](https://www.pnc.com/insights/corporate-institutional.html)
+- [Security](https://www.pnc.com/en/security-privacy/responsible-disclosure-program.html)
+- [Terms of service](https://www.pnc.com/en/customer-service/terms-conditions.html)
+- [Privacy policy](https://www.pnc.com/en/customer-service/privacy-policy/privacy-policy-and-notices.html)
+- [GitHub](https://github.com/pnctech)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** API Evangelist
+**Kin Score 10.6** — minimal · rubric 0.24.0 · scored 2026-10-17
 
-**Email:** info@apievangelist.com
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 21.4 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 9.4** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/pnc/](https://apis.io/providers/pnc/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for PNC: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/pnc/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
